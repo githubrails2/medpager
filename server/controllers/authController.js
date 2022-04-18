@@ -4,7 +4,8 @@ import { connect } from "getstream";
 import crypto from "crypto";
 
 const api_key = process.env.STREAM_API_KEY;
-const api_secret = process.env.STREAM_API_SECRET;
+const api_secret =
+	"y9kdsqh5vav3886quqzs7ucnzfpmpxhdrtfjenkxehb2mc4gmamtushs7h3qzz78";
 const app_id = process.env.STREAM_APP_ID;
 export const signup = async (req, res) => {
 	try {
@@ -24,8 +25,8 @@ export const signup = async (req, res) => {
 export const login = async (req, res) => {
 	try {
 		const { username, password } = req.body;
-		const serverClient = connect(apit_key, api_secret, app_id);
-		const client = StreamChat.getInstance(api_key, api_secret);
+		const serverClient = StreamChat.getInstance(api_key, api_secret);
+		const client = connect(api_key, api_secret);
 		const { users } = await client.queryUsers({ name: username });
 		if (!users.length)
 			return res.status(400).json({ message: "User not found" });
