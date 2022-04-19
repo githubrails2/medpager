@@ -15,11 +15,11 @@
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
-    "dotenv": "^16.0.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.3",
-    "getstream": "^8.0.0",
+    "getstream": "^7.2.10",
     "nodemon": "^2.0.15",
-    "stream-chat": "^6.5.0",
-    "twilio": "^3.76.1"
+    "stream-chat": "^4.1.0",
+    "twilio": "^3.67.1"
   }
 }

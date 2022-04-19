@@ -130,7 +130,7 @@ const Auth = () => {
 						<p>
 							{isSignup ? "Already have an account?" : "Don't have an account"}
 							<span onClick={switchMode}>
-								{isSignup ? "Sign up" : "Sign in"}
+								{isSignup ? "Sign in" : "Sign up"}
 							</span>
 						</p>
 					</div>

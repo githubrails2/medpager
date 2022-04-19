@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import express from "express";
 
 dotenv.config();
-console.log("Index", process.env);
+
 const app = express();
 const PORT = 5001 || process.env.PORT;
 
